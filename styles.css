@@ -33,9 +33,7 @@ body {
   overflow: hidden; /* Hide contents when height is 0 */
   display: flex;
   justify-content: center;
-  gap: 10px;
-  padding: 10px;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(0, 0, 0, 0.2);
   transition: opacity 0.5s ease-in-out;
   opacity: 0;
   pointer-events: none;
@@ -45,10 +43,11 @@ body {
   border: none;
   padding: 10px 20px;
   background-color: transparent;
-  color: black;
+  color: white;
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
+  justify-content: center;
 }
 .menu-bar button:hover {
   background-color: black;
@@ -60,7 +59,6 @@ body {
 }
 .menu-bar.visible {
   height: 50px; /* Set the desired height when visible */
-  padding: 10px; /* Restore padding when visible */
   opacity: 1;
   pointer-events: all;
 }
@@ -91,12 +89,21 @@ body {
 .name {
   font-size: 96px;
 }
+
 .button-group {
   display: flex; /* 横並びにする */
-  justify-content: center; /* 中央揃え */
+  justify-content: center;
   gap: 50px; /* ボタン間の余白 */
 }
+
+.round-button-container {
+  position: relative;
+  width: 142px;
+  height: 142px;
+}
+
 .round-button {
+  position: absolute;
   font-family: "Source Serif Pro", serif; /* Set base font family */
   border: none;
   border-radius: 50%;
@@ -104,15 +111,33 @@ body {
   height: 142px;
   font-size: 24px;
   cursor: pointer;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.back {
+  z-index: 1;
+  top: 0px;
+  right: 0px;
   background-color: rgba(0, 0, 0, 0.2);
-  color: white;
-  transition: background-color 0.3s, color 0.3s;
 }
-.round-button:hover {
+
+.front {
+  z-index: 2;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.round-button-container:hover .round-button {
   background-color: black;
-  color: white;
 }
-.round-button:active {
+
+.round-button-container:hover .back {
+  transform: translate(-10px, 10px);
+}
+
+.round-button-container:active .round-button {
   background-color: white;
   color: black;
 }
@@ -126,7 +151,7 @@ h1 {
 h2 {
   font-family: "Caveat", cursive;
   font-size: 64px; /* Set font size to 96px */
-  text-decoration: underline;
+  /* text-decoration: underline; */
   text-align: center;
 }
 
