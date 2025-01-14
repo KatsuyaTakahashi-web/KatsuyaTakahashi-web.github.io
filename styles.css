@@ -1,0 +1,149 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap");
+
+/* Reset */
+body,
+h1,
+h2,
+p,
+nav,
+button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Source Serif Pro", serif; /* Set base font family */
+  line-height: 1.6;
+  overflow-x: hidden;
+  background-image: url("img/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center top;
+}
+
+/* Menu Bar */
+.menu-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 0; /* Initially set height to 0 */
+  overflow: hidden; /* Hide contents when height is 0 */
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease-in-out, height 0.5s ease-in-out; /* Add height transition */
+}
+.menu-bar button {
+  border: none;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+.menu-bar button:hover {
+  background-color: black;
+  color: white;
+}
+.menu-bar button:active {
+  background-color: white;
+  color: black;
+}
+.menu-bar.visible {
+  height: 50px; /* Set the desired height when visible */
+  padding: 10px; /* Restore padding when visible */
+  opacity: 1;
+  pointer-events: all;
+}
+
+/* Top Section */
+.top-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 2s ease-in-out;
+  gap: 200px;
+  padding: 0px 20px;
+}
+.icon-name-group {
+  display: flex; /* フレックスボックスを適用 */
+  justify-content: center; /* 水平方向に中央揃え */
+  align-items: center; /* 垂直方向に中央揃え */
+  gap: 50px; /* アイコンと名前の間にスペースを追加 */
+}
+.icon {
+  width: 200px;
+  height: 200px;
+  border-radius: 20%;
+  object-fit: cover;
+}
+.name {
+  font-size: 96px;
+}
+.button-group {
+  display: flex; /* 横並びにする */
+  justify-content: center; /* 中央揃え */
+  gap: 50px; /* ボタン間の余白 */
+}
+.round-button {
+  font-family: "Source Serif Pro", serif; /* Set base font family */
+  border: none;
+  border-radius: 50%;
+  width: 142px;
+  height: 142px;
+  font-size: 24px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+  transition: background-color 0.3s, color 0.3s;
+}
+.round-button:hover {
+  background-color: black;
+  color: white;
+}
+.round-button:active {
+  background-color: white;
+  color: black;
+}
+
+/* h1 and h2 Styling */
+h1 {
+  font-family: "Caveat", cursive;
+  font-size: 96px; /* Set font size to 96px */
+  /* text-decoration: underline; */
+}
+h2 {
+  font-family: "Caveat", cursive;
+  font-size: 64px; /* Set font size to 96px */
+  text-decoration: underline;
+  text-align: center;
+}
+
+/* Content Sections */
+section {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

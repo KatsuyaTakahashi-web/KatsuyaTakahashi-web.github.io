@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Katsuya Takahashi</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body
+    style="
+      background-image: url('img/background.png');
+      background-size: cover;
+      background-position: center;
+    "
+  >
+    <!-- Menu Bar -->
+    <nav class="menu-bar">
+      <button data-scroll-to="top">Top</button>
+      <button data-scroll-to="aboutMe">About Me</button>
+      <button data-scroll-to="history">History</button>
+      <button data-scroll-to="services">Services</button>
+      <button data-scroll-to="skills">Skills</button>
+      <button data-scroll-to="portfolio">Portfolio</button>
+      <button data-scroll-to="contact">Contact</button>
+    </nav>
+
+    <!-- Top Section -->
+    <section id="top" class="top-section">
+      <div class="icon-name-group">
+        <img src="img/me.png" alt="Icon" class="icon" />
+        <h1 class="name">Katsuya Takahashi</h1>
+      </div>
+      <div class="button-group">
+        <button class="round-button" data-scroll-to="aboutMe">About Me</button>
+        <button class="round-button" data-scroll-to="history">History</button>
+        <button class="round-button" data-scroll-to="services">Services</button>
+        <button class="round-button" data-scroll-to="Skills">Skills</button>
+        <button class="round-button" data-scroll-to="portfolio">
+          Portfolio
+        </button>
+        <button class="round-button" data-scroll-to="contact">Contact</button>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <section id="aboutMe">
+      <h2>About Me</h2>
+      <p>
+        お客様との会話が得意なエンジニア。<br />
+        大手Sierで培った上流工程〜保守・運用までの幅広い知識と経験を活かし、<br />
+        広い視野での提案、開発を行います。<br />
+      </p>
+    </section>
+    <section id="history">
+      <h2>History</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </section>
+    <section id="services">
+      <h2>Services</h2>
+      <p>Details about services offered.</p>
+    </section>
+    <section id="skills">
+      <h2>Skills</h2>
+      <p>Information about the team.</p>
+    </section>
+    <section id="portfolio">
+      <h2>Portfolio</h2>
+      <p>Examples of work.</p>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>How to get in touch.</p>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
