@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Katsuya Takahashi</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body
+    style="
+      background-image: url('img/background.png');
+      background-size: cover;
+      background-position: center;
+    "
+  >
+    <!-- Menu Bar -->
+    <nav class="menu-bar">
+      <button data-scroll-to="top">Top</button>
+      <button data-scroll-to="aboutMe">About Me</button>
+      <button data-scroll-to="services">Services</button>
+      <button data-scroll-to="skills">Skills</button>
+      <button data-scroll-to="portfolio">Portfolio</button>
+      <button data-scroll-to="history">History</button>
+      <button data-scroll-to="contact">Contact</button>
+    </nav>
+
+    <!-- Top Section -->
+    <section id="top" class="top-section">
+      <div class="icon-name-group">
+        <img src="img/me.png" alt="Icon" class="icon" />
+        <h1 class="name">Katsuya Takahashi</h1>
+      </div>
+      <div class="button-group">
+        <div class="round-button-container">
+          <button class="round-button front" data-scroll-to="aboutMe">
+            About Me
+          </button>
+          <button class="round-button back" data-scroll-to="aboutMe"></button>
+        </div>
+
+        <div class="round-button-container">
+          <button class="round-button front" data-scroll-to="services">
+            Services
+          </button>
+          <button class="round-button back" data-scroll-to="services"></button>
+        </div>
+        <div class="round-button-container">
+          <button class="round-button front" data-scroll-to="skills">
+            Skills
+          </button>
+          <button class="round-button back" data-scroll-to="skills"></button>
+        </div>
+        <div class="round-button-container">
+          <button class="round-button front" data-scroll-to="portfolio">
+            Portfolio
+          </button>
+          <button class="round-button back" data-scroll-to="portfolio"></button>
+        </div>
+        <div class="round-button-container">
+          <button class="round-button front" data-scroll-to="history">
+            History
+          </button>
+          <button class="round-button back" data-scroll-to="history"></button>
+        </div>
+        <div class="round-button-container">
+          <button class="round-button front" data-scroll-to="contact">
+            Contact
+          </button>
+          <button class="round-button back" data-scroll-to="contact"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <section id="aboutMe">
+      <h2>About Me</h2>
+      <p>
+        お客様との会話が得意なエンジニア。<br />
+        大手SIerで培った上流工程〜保守・運用、フロント〜バックエンドの幅広い知識と経験を活かし、<br />
+        広い視野とさまざまな役割で、システム構築に貢献します。<br />
+      </p>
+    </section>
+    <section id="services">
+      <h2>Services</h2>
+      <p>
+        システム企画補助<br />
+        開発請負（ツール類・小規模WEBアプリなど）<br />
+        ホームページ作成<br />
+        ...etc<br />
+        <br />
+        注）個人での対応となりますので、規模や工数に制限があります。<br />
+      </p>
+    </section>
+    <section id="skills">
+      <h2>Skills</h2>
+      <table>
+        <tr>
+          <th>実務で使用経験のある言語など</th>
+          <td>C#,VB.net,HTML,CSS,JavaScript,T-SQL,ストアドプロシージャ</td>
+        </tr>
+        <tr>
+          <th>実務で使用したことはないが、触れたことのある言語</th>
+          <td>java,python(機械学習を行うPGを実装）,C</td>
+        </tr>
+      </table>
+    </section>
+    <section id="portfolio">
+      <h2>Portfolio</h2>
+      <p>~準備中~</p>
+    </section>
+    <section id="history">
+      <h2>History</h2>
+      <table>
+        <tr>
+          <th>期間</th>
+          <th>業務内容</th>
+          <th>役割・規模</th>
+          <th>使用言語</th>
+          <th>DB</th>
+          <th>サーバ・OS</th>
+          <th>FW・MW・ツール等</th>
+          <th>担当工程</th>
+        </tr>
+        <tr>
+          <td>
+            2019/04〜<br />
+            2019/11
+          </td>
+          <td class="td-gyoumu">
+            新卒で大手SIerに入社<br />
+            半年の研修を受講<br />
+            <br />
+            <button class="show-button" onclick="toggleDetails(this)">
+              詳細
+            </button>
+          </td>
+          <td class="td-center">-</td>
+          <td>
+            <ul>
+              <li>C#</li>
+              <li>Java</li>
+              <li>Python</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+          </td>
+          <td>postgreSQL</td>
+          <td>
+            <ul>
+              <li>WindowsServer</li>
+              <li>Linux</li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li>Hyper-V</li>
+              <li>ApcheTomcat</li>
+            </ul>
+          </td>
+          <td class="td-center">-</td>
+        </tr>
+        <tr class="details">
+          <td colspan="8">
+            基礎知識
+            <ul>
+              <li>ビジネスルール全般</li>
+              <li>セキュリティ教育</li>
+              <li>Office関連の使用方法</li>
+            </ul>
+            専門知識
+            <ul>
+              <li>オブジェクト思考（Java）</li>
+              <li>ロボットプログラミング（Python）</li>
+              <li>サーバー構築（Web/DBサーバー）</li>
+              <li>ウェブページ構築（C#/HTML/CSS)</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            2019/11〜<br />
+            2020/10
+          </td>
+          <td class="td-gyoumu">
+            大手流通・小売業のお客様<br />
+            ポイントシステム更改案件に参画<br />
+            <br />
+            <button class="show-button" onclick="toggleDetails(this)">
+              詳細
+            </button>
+          </td>
+          <td>
+            PM、PMO：1名<br />
+            社内開発者 ：3名
+          </td>
+          <td>
+            <ul>
+              <li>C#</li>
+              <li>vb6</li>
+            </ul>
+          </td>
+          <td>SQLServer2019</td>
+          <td>
+            <ul>
+              <li>WindowsServer2019</li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li>Hyper-V</li>
+            </ul>
+          </td>
+          <td>
+            基本設計〜 <br />
+            結合テスト
+          </td>
+        </tr>
+        <tr class="details">
+          <td colspan="8">
+            担当業務
+            <ul>
+              <li>システムの設計、実装、テスト、導入</li>
+              <li>ミドルウェア、ソフトウェアの導入や環境構築</li>
+              <li>
+                サーバーバックアップに伴うvb6からvb.netへのコンバート作業（計画～実行）
+              </li>
+              <li>DBサーバーのマイグレーション（設計～導入）</li>
+            </ul>
+            経験
+            <ul>
+              <li>DBサーバーのマイグレーションではパラメータ設計を担当</li>
+              <li>仮想サーバーへの検証環境の構築も経験</li>
+              <li>
+                本プロジェクトでは、インフラ設計～導入までの一連の流れを経験しました。
+              </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            2020/10〜<br />
+            2023/12
+          </td>
+          <td class="td-gyoumu">
+            自動車部品卸売業のお客様<br />
+            得意先様業務支援WEBシステムの新規開発に参画<br />
+            <br />
+            <button class="show-button" onclick="toggleDetails(this)">
+              詳細
+            </button>
+          </td>
+
+          <td>
+            PM、PMO：2名　<br />
+            品質管理支援：1名<br />
+            社内開発者 ：3名<br />
+            社外開発者 ：5名 <br />
+            案件全体人数：約11名
+          </td>
+          <td>
+            <ul>
+              <li>WebAP: C#</li>
+              <li>スマホアプリ: swift</li>
+            </ul>
+          </td>
+          <td>SQLServer2016</td>
+          <td>
+            <ul>
+              <li>WindowsServer2016</li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li>タスクスケジューラ</li>
+              <li>パフォーマンスモニタ</li>
+              <li>SpreadJS</li>
+            </ul>
+          </td>
+          <td>全工程</td>
+        </tr>
+        <tr class="details">
+          <td colspan="8">
+            概要
+            <ul>
+              <li>
+                ECサイトパッケージをベースとし、在庫管理機能をスクラッチ開発でアドオンした新規システムの要件定義～導入（約200機能）
+              </li>
+              <li>
+                導入後、新規機能の要件定義～開発・導入（プロジェクトあたり5カ月スパンで、平均25機能ずつの追加改修）
+              </li>
+              <li>AP保守のPMを担当。軽微な改修群の提案～導入</li>
+            </ul>
+            担当業務
+            <ul>
+              プロジェクト全体を通して、PM,APリーダ、開発者のすべてを経験。
+              <br />
+              AP保守プロジェクトでは顧客（ＩＴ部門、営業部門）との意見調整を担当。
+              <br />
+              加えて、顧客親会社ＩＴ部門との意見調整のサポート、および、顧客の顧客との会議に参加した経験もあり。<br />
+              <ol>
+                <li>初期開発</li>
+                <ul>
+                  <li>
+                    APリーダ業務:
+                    <br />
+                    主として開発標準の策定、進捗管理、開発方針のすり合わせを担当。顧客、協力企業APリーダ、パッケージベンダーとのやり取りあり。<br />
+                  </li>
+                  <li>
+                    開発（設計～開発）：
+                    <br />
+                    WebAPIを担当。<br />
+                  </li>
+                  <li>
+                    アプリケーション導入：<br />
+                    パッケージが管理するプライベートクラウド上の環境に対して、IIS設定を含むWebアプリケーションの導入を担当。加えてスマホアプリ（ios)の配信登録の一連の流れを担当。<br />
+                  </li>
+                </ul>
+                <li>増築フェーズ</li>
+                初期開発時の担当業務に加えて、結合テスト計画の策定。<br />
+                <li>AP保守</li>
+                日々の顧客問い合わせ窓口。改修が発生した時の要件整理～導入までを担当。
+              </ol>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <a href="mailto:katsuya.takahashi.tec@outlook.jp"
+        >katsuya.takahashi.tec@outlook.jp</a
+      >
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -38,3 +38,25 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+function toggleDetails(button) {
+  const row = button.closest("tr");
+  const nextRow = row.nextElementSibling;
+
+  if (nextRow && nextRow.classList.contains("details")) {
+    if (nextRow.style.display === "none" || nextRow.style.display === "") {
+      nextRow.style.display = "table-row";
+      button.textContent = "閉じる";
+    } else {
+      nextRow.style.display = "none";
+      button.textContent = "詳細";
+    }
+  }
+}
+
+// 初期化：すべての詳細行を非表示にする
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".details").forEach((detailRow) => {
+    detailRow.style.display = "none";
+  });
+});

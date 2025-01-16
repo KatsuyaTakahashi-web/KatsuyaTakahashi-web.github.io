@@ -12,6 +12,25 @@ button {
   padding: 0;
   box-sizing: border-box;
 }
+
+.show-button {
+  cursor: pointer;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.show-button:hover {
+  background-color: black;
+}
+
+.show-button:active .round-button {
+  background-color: white;
+  color: black;
+}
+
 body {
   font-family: "Source Serif Pro", serif; /* Set base font family */
   line-height: 1.6;
@@ -159,6 +178,47 @@ h2 {
 section {
   padding: 100px 20px;
   text-align: center;
+}
+
+table {
+  margin: auto;
+  border-collapse: collapse;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 2rem;
+  max-width: 1500px;
+}
+
+td {
+  text-align: left;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.td-center {
+  text-align: center;
+}
+
+.td-gyoumu {
+  width: 300px;
+}
+
+th {
+  text-align: center;
+  padding: 5px;
+  border: 1px solid black;
+}
+
+ul {
+  padding: 1rem;
+  list-style-type: none;
+}
+
+ol {
+  padding: 1rem;
+}
+
+li {
+  text-align: left;
 }
 
 /* Animations */
