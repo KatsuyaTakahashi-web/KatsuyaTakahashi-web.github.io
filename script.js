@@ -1,3 +1,13 @@
+(function () {
+  // スマホのユーザーエージェントを判定
+  var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+  // スマホならリダイレクト
+  if (isMobile) {
+    window.location.href = "./smartphone/index.html";
+  }
+})();
+
 // JavaScript for scrolling and animations
 document.addEventListener("DOMContentLoaded", () => {
   const menuBar = document.querySelector(".menu-bar");
