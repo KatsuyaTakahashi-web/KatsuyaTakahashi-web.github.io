@@ -154,13 +154,16 @@ td {
 }
 
 .td-gyoumu {
-  width: 110px;
+  width: 10rem;
 }
 
 th {
   text-align: center;
   padding: 5px;
   border: 1px solid black;
+}
+.skills-th {
+  width: 6rem;
 }
 
 ol {
